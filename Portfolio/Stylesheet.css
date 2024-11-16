@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    min-height: 100%;
+    background: linear-gradient(to right, #313131,#574343,#823744,#d15368);
+    display: flex;
+    flex-direction:column;
+    overflow-x: hidden;
+}
+
+/* Navigation bar style */
+.navigation-bar {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #313131;
+    padding: 30px 0px;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.navigation-bar > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.navigation-bar > ul > li > a {
+    text-decoration: none;
+    color: #313131;
+    padding: 10px 50px;
+    background-color: #823744;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.navigation-bar > ul > li > a:hover {
+    background-color: #e78f9e;
+    color: #313131;
+}
+
+.navigation-bar ul li a.active {
+    background-color: #d15368;
+    color: #1c1c1c;
+}
+
+/*Index page Style */
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    flex: 1; 
+    padding-top: 20px; 
+}
+
+.my-photo {
+    border-radius: 30px;
+    height: 650px;
+}
+
+.home-text {
+    max-width: 900px;
+}
+
+.home-text h1{
+    font-family:'Roboto', sans-serif;
+    font-size: 40px;
+    color: #3e1a20;
+    margin: 0;
+    text-align:center;
+}
+
+.home-text h1 span{
+    text-transform: uppercase;
+}
+
+.home-page p {
+    font-family:'Roboto', sans-serif;
+    color: #2f2729;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.social-media a img{
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: none;
+}
+
+.social-media a:hover img{
+    transform: scale(1.1);
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    background-color: #313131;
+    color: #e9667c;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/*About me page style*/
+.aboutme-top {
+    padding: 100px;
+    padding-bottom: 100px;
+}
+
+.main-box {
+    background: #313131;
+    box-shadow: 5px 5px 15px #e9667c;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main-box h4 {
+    color: #ef657c;
+    margin: 10px 0;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-box p{
+    margin: 10px 0;
+    color: #eaacb7;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#card-area {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    flex-wrap: wrap; 
+    margin-top: 30px;
+}
+
+.card-box {
+    background: rgba(47, 46, 46, 0.456);
+    box-shadow: 5px 5px 15px #e9667c;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;    
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}    
+
+.card-box:hover {
+    transform: scale(1.07); 
+}
+
+.card-box h2 {
+    color: #e9667c;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-box ul {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: #ecdede;
+    list-style-type:circle;
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease, max-height 0.3s ease; 
+}
+
+.card-box ul li:first-child {
+    color: #e088a5; 
+}    
+
+.card-box ul li:last-of-type {
+    color: #d7568c; 
+}
+
+.card-box:hover ul {
+    opacity: 1;
+    max-height: 300px; 
+}
+
+/*Blog page style*/
+.blog-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+    padding: 100px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; 
+}
+
+.blog-box {
+    display: flex;
+    background-color: rgba(47, 46, 46, 0.456);
+    box-shadow: 0 4px 12px #e9667c;
+    width: 60%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #e9667c;
+}
+
+.blog-img-left, .blog-img-right {
+    width: 50%;
+    padding: 20px;
+}
+
+.blog-img-left img, .blog-img-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-text-right, .blog-text-left {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-text-right h4, .blog-text-left h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #e9667c;
+}
+
+.blog-text-right p, .blog-text-left p {
+    font-size: 20px;
+    color: #f99aaa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-text-right a, .blog-text-left a {
+    display: inline-block;
+    background-color: #e9667c;
+    color: #313131;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    font-size: 20px;
+}
+
+.blog-text-right a:hover, .blog-text-left a:hover {
+    background-color: #f6b0bc;
+}
+
+.blog-container:nth-child(odd) .blog-box {
+    flex-direction: row;
+}
+
+.blog-container:nth-child(even) .blog-box {
+    flex-direction: row-reverse;
+}
+
+/*sport page and hobbie page style */
+.sport, .hobbies {
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 55px;
+    padding-bottom: 70px;
+}
+
+.sport-text, .hobbies-text {
+    padding: 5px;
+}    
+
+.sport-text h2, .hobbies-text h2{
+    font-size: 25px;
+    color: rgb(233, 203, 214);
+    text-decoration: underline;
+    font-family:'Roboto', sans-serif;
+    
+}
+
+.sport-text p, .hobbies-text p{
+    color: #edbac2;
+    line-height: 1.5rem;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+}
+
+.sport-img img, .hobbies-img img {
+    width: 140px;
+    height: 140px;
+    object-fit:fill;
+    margin-top: 10px;
+    padding: 10px;
+    border: solid#e9667c;
+}
+
+
+/*Contact page style*/
+.contact-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    overflow: hidden;
+}
+
+form{
+    width: 90%;
+    max-width: 700px;
+}
+.input{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 15px;
+    outline: 0;
+    border: 3px solid #7c3e49;
+    border-radius: 10px;
+    color:#e28090;
+    background: transparent;
+    font-size: 20px;
+}
+
+input[type="tel"] {
+    border: 2px solid #7c3e49;
+    background-color: rgba(47, 46, 46, 0.456);
+    color: #cb7998;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #e9667c;
+    cursor: text;
+    transition: 0.2s;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.submit button{
+    padding: 5px;
+    color: #e3b0b0;
+    outline: none;
+    background-color:rgba(229, 118, 175, 0.325);
+    border: 5px solid #e9667c;
+    border-radius: 40px;
+    width: 50%;
+    cursor: pointer;
+    align-items: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 25%;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    border: 2px solid #e9667c;
+    background-color: rgba(47, 46, 46, 0.456);
+    color: #cb79c4;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row input{
+    flex-basis: 48%;
+}
+
+.outside-box {
+    width: 50%;
+    background-color: #31313186;  
+    padding: 20px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 10px 10px #e9667c;  
+}
+
+input:not([type="submit"]), 
+textarea {
+    color: #e696b5;
+}
+
+/* Tablet  media queries*/
+@media (max-width: 768px) {
+    .navigation-bar {
+        padding: 20px 0;
+    }
+    .navigation-bar ul li a {
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+    
+    .home-page {
+        flex-direction: column;
+        padding-top: 80px; /* to adjust for fixed nav overlap */
+        text-align: center;
+    }
+
+    .my-photo {
+        height: 450px;
+    }
+
+    .home-text h1 {
+        font-size: 32px;
+    }
+
+    .home-page p {
+        font-size: 20px;
+    }
+
+    .main-box {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #card-area {
+        gap: 15px;
+    }
+
+    .card-box {
+        width: 180px;
+    }
+
+    .blog-container {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .blog-box {
+        width: 100%;
+    }
+
+    .sport, .hobbies {
+        padding: 20px;
+    }
+
+    .contact-page {
+        padding: 60px 10px 100px;
+        text-align: center;
+    }
+}
+
+/* Mobile  media queries*/
+@media (max-width: 480px) {
+    .navigation-bar ul li a {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    
+    .home-page {
+        padding-top: 60px;
+    }
+
+    .my-photo {
+        height: 300px;
+        width: 80%;
+    }
+
+    .home-text h1 {
+        font-size: 24px;
+    }
+
+    .home-page p {
+        font-size: 18px;
+    }
+
+    .main-box {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #card-area {
+        gap: 10px;
+    }
+
+    .card-box {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .blog-container {
+        padding: 15px;
+    }
+
+    .blog-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .blog-img-left, .blog-img-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sport, .hobbies {
+        padding: 15px;
+    }
+
+    .contact-page form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .outside-box {
+        width: 90%;
+    }
+
+    .submit button {
+        width: 80%;
+        left: 10%;
+    }
+}

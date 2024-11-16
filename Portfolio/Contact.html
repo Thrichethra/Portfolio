@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>My Personal Portfolio - Thrichethra Sivarajah</title>
+</head>
+
+<body>
+    <!--Header of the page-->
+    <header>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Me.html">About Me</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html"class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <!--Contact page-->
+    <div class="contact-page">
+        <div class="outside-box">
+            <form>
+                <!--Name-->
+                <div class="row">
+                    <div class="input">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+            
+                    <!--Phone number-->
+                    <div class="input">
+                        <input type="number" id="number" min="0" maxlength="15">
+                        <label for="number">Phone Number</label>
+                    </div>
+                </div>
+                
+                <!--Email address-->
+                <div class="input">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+        
+                <!--Message-->
+                <div class="input">
+                    <textarea id="message" rows="10"required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                
+                <!--Submit button-->
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer of the page-->
+    <footer>
+        <p>&copy; 2024 Thrichethra Sivarajah. All rights reserved.</p>
+    </footer> 
+</body>    
+</html>
